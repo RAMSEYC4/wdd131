@@ -1,0 +1,32 @@
+@media(min-width:650px) {
+
+  header {
+    background-color: black;
+    color: white;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(100px, 200px);
+    gap: 1rem;
+  }
+
+  section {
+    margin: 10px 10px;
+  }
+
+  section h2 {
+    margin: 10px;
+  }
+
+  section p {
+    margin: 10px;
+  }
+
+  footer {
+    width: 100%;
+    grid-column: 1 /-1;
+    padding: 20px 0;
+  }
+}

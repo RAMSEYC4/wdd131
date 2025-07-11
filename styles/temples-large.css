@@ -1,0 +1,53 @@
+@media (max-width: 500px) {
+
+  .nav-big-screens,
+  .nav-small-screens,
+  .nav-container {
+    display: none;
+  }
+
+  .fa-solid {
+    font-size: 30px;
+    margin: 0 10px 0 0;
+  }
+
+  .fa-solid:hover {
+    opacity: 0.8;
+  }
+
+  .nav-small-screens a {
+    text-align: center !important;
+    color: white;
+    padding: 5px 20px;
+  }
+
+  section {
+    /* border: 1px solid #d60000; */
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6"
+      "card7"
+      "card8"
+      "card9"
+    ;
+    justify-content: center !important;
+  }
+
+  section>* {
+    width: 100%;
+  }
+}
+
+@media (min-width: 501px) {
+  .fa-solid,
+  .nav-small-screens,
+  .nav-container {
+    display: none !important;
+  }
+}
