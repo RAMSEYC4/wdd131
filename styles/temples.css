@@ -98,6 +98,11 @@ img {
   object-fit: cover;
 }
 
+figcaption {
+  font: 900;
+  font-size: 20px;
+}
+
 footer {
   margin-top: 10px;
   background-color: rgb(0, 110, 182);
