@@ -1,3 +1,8 @@
+:root {
+  --darkgrey: (#616161);
+  --darkbackground: (#272727);
+}
+
 @media (min-width:300px) {
   header {
     /* border: 1px solid rgb(67, 0, 210); */
@@ -68,12 +73,18 @@
   }
 
   .section3-heading {
-    background-color: #d6d6d6;
+    border: 1px solid #000;
     display: flex;
     align-items: center;
   }
 
+  .first{
+    border-bottom: px solid #000;
+    width: 100%;
+  }
+
   .section3 {
+    border: 1px solid #000;
     margin-bottom: 10px;
     justify-self: right;
     height: fit-content;
