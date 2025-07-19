@@ -7,8 +7,8 @@
 }
 
 :root {
-  --darkgrey: (#616161);
-  --darkbackground: (#272727);
+  --darkgrey: #616161;
+  --darkbackground: #272727;
 }
 
 /*Reset on media queries */
@@ -63,7 +63,7 @@ header {
 
 footer {
   margin-top: 5px;
-  background-color:#272727 ;
+  background-color: #272727;
   padding: 5px 0;
 }
 

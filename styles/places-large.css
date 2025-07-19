@@ -1,9 +1,4 @@
-:root {
-  --darkgrey: (#616161);
-  --darkbackground: (#272727);
-}
-
-@media (min-width:300px) {
+@media (min-width: 300px) {
   header {
     /* border: 1px solid rgb(67, 0, 210); */
     padding: 10px 5px;
@@ -12,10 +7,7 @@
   }
 }
 
-
-
-
-@media (min-width:850px) {
+@media (min-width: 850px) {
 
   /*Reset on media queries */
   h1 {
@@ -78,8 +70,8 @@
     align-items: center;
   }
 
-  .first{
-    border-bottom: px solid #000;
+  .first {
+    border-bottom: 1px solid #000;
     width: 100%;
   }
 
