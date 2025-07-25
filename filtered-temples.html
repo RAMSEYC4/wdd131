@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Showing my basic understandng of web development">
+  <meta name="author" content="Cedou Ramsey">
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="scripts/filtered-temples.js" defer></script>
+  <title>Picture Album</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1 class="header">Temple infor</h1>
+      <!--nav big screens start-->
+      <ul class="nav-big-screens">
+        <li><a class="links1" href="#">Old</a> </li>
+        <li><a class="links2" href="#">New</a></li>
+        <li><a class="links3" href="#">Large</a> </li>
+        <li><a class="links4" href="#">Small </a> </li>
+        <li><a class="links5" href="#">Home</a></li>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="toggleNavbar()"></i>
+      <!--nav big screens end-->
+    </nav>
+    <!--nav small screens start-->
+    <div class="active">
+      <ul class="nav-small-screens">
+        <li><a class="links1" href="#">Old</a></li>
+        <li><a class="links2" href="#">New</a></li>
+        <li><a class="links3" href="#">Large</a></li>
+        <li><a class="links4" href="#">Small</a></li>
+        <li><a class="links5" href="#">Home</a></li>
+      </ul>
+    </div>
+    <!--nav small screens end-->
+  </header>
+
+  <main class="js_render_html">
+  </main>
+
+  <footer>
+    <p id="lastModified">
+    </p>
+    <p>
+      <span id="currentyear">
+      </span>
+    </p>
+  </footer>
+</body>
+
+</html>
