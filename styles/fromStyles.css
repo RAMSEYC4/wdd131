@@ -28,7 +28,7 @@ header {
   border-radius: 10px;
   display: grid;
   align-items: center;
-  margin: 0 6px;
+  margin: 0 6.5px;
   max-width: 530px;
   height: fit-content;
 }
