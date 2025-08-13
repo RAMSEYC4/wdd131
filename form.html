@@ -4,19 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Basic sign in form for the website">
-  <link rel="stylesheet" href="styles/froms.css">
-  <script src="scripts/form.js" defer></script>
-  <title>Product Review Form</title>
+  <meta name="description" content="Submit detailed product reviews and ratings for various tech products">
+  <meta name="author" content="Cedou Ramsey">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/froms.css">
+  <script src="./scripts/form.js" defer></script>
+  <title>Product Review Form - Temple Info</title>
 </head>
 
 <body>
 
   <header>
-    <h1 class="header">Temple infor</h1>
+    <h1 class="header">Temple Info</h1>
   </header>
 
-  <section class="form-conatiner">
+  <div class="form-conatiner">
+    <h2 style="text-align: center; padding: 20px 0; color: #333; margin: 0;">Product Review Form</h2>
 
     <div class="form-content">
       <form method="get" action="review.html">
@@ -24,6 +29,7 @@
         <div class="form-group">
           <label for="productName">Product Name</label>
           <select id="productName" name="productName" required>
+            <option value="" disabled selected>Select a Product ...</option>
           </select>
         </div>
         <!-- Overall Rating -->
@@ -32,23 +38,23 @@
           <div class="rating-group">
             <div class="rating-option">
               <input type="radio" id="rating1" name="overallRating" value="1" required>
-              <label for="rating1">☆</label>
+              <label for="rating1">★</label>
             </div>
             <div class="rating-option">
               <input type="radio" id="rating2" name="overallRating" value="2" required>
-              <label for="rating2">☆☆</label>
+              <label for="rating2">★★</label>
             </div>
             <div class="rating-option">
               <input type="radio" id="rating3" name="overallRating" value="3" required>
-              <label for="rating3">☆☆☆</label>
+              <label for="rating3">★★★</label>
             </div>
             <div class="rating-option">
               <input type="radio" id="rating4" name="overallRating" value="4" required>
-              <label for="rating4">☆☆☆☆</label>
+              <label for="rating4">★★★★</label>
             </div>
             <div class="rating-option">
               <input type="radio" id="rating5" name="overallRating" value="5" required>
-              <label for="rating5">☆☆☆☆☆</label>
+              <label for="rating5">★★★★★</label>
             </div>
           </div>
         </div>
@@ -93,12 +99,12 @@
         </div>
         <!-- Submit Button -->
         <div class="form-group">
-          <input type="submit" value="Post Review" class="submit-btn" onclick="saveResponse()">
+          <input type="submit" value="Post Review" class="submit-btn">
         </div>
 
       </form>
     </div>
-  </section>
+  </div>
 
   <footer>
     <p id="lastModified">
@@ -108,7 +114,6 @@
       </span>
     </p>
   </footer>
-
 </body>
 
 </html>
