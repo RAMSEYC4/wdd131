@@ -1,13 +1,3 @@
-const information = new Date().getFullYear()
-const lastModification = new Date(document.lastModified)
-
-document.querySelector('#lastModified')
-  .innerHTML = `@${information} Cedou Ramsey Pretoria`
-
-document.querySelector('#currentyear')
-  .innerHTML = `${lastModification}`
-
-
 const products = [
   {
     id: "fc-1888",
@@ -36,6 +26,18 @@ const products = [
   }
 ];
 
+const Users = []
+
+const information = new Date().getFullYear()
+const lastModification = new Date(document.lastModified)
+
+document.querySelector('#lastModified')
+  .innerHTML = `@${information} Cedou Ramsey Pretoria`
+
+document.querySelector('#currentyear')
+  .innerHTML = `${lastModification}`
+
+
 let selectElement = document.querySelector('#productName');
 let renderHtml = '<option value="" disabled selected>Select a Product ...</option>';
 products.forEach(product => {
@@ -45,4 +47,3 @@ products.forEach(product => {
   renderHtml += values;
 })
 selectElement.innerHTML = renderHtml;
-
